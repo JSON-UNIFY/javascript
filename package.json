@@ -1,0 +1,19 @@
+{
+  "name": "json-unify",
+  "version": "0.0.1",
+  "description": "JSON Unify for Node.js and the Web",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSON-UNIFY/javascript.git"
+  },
+  "author": "Juan Cruz Viotti <jv@jviotti.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/JSON-UNIFY/javascript",
+  "bugs": {
+    "url": "https://github.com/JSON-UNIFY/javascript/issues"
+  }
+}
