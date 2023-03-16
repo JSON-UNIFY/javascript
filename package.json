@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "@hyperjump/json-schema": "^1.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
   }
 }
