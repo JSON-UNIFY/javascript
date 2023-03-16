@@ -15,5 +15,8 @@
   "homepage": "https://github.com/JSON-UNIFY/javascript",
   "bugs": {
     "url": "https://github.com/JSON-UNIFY/javascript/issues"
+  },
+  "dependencies": {
+    "@hyperjump/json-schema": "^1.4.1"
   }
 }
