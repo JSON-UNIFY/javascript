@@ -1,0 +1,11 @@
+[
+  {
+    "data": [ 1, 2, 3 ],
+    "instance": {
+      "$id": "https://example.com/simple-any",
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ]
+    }
+  }
+]
