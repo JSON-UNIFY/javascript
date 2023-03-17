@@ -4,6 +4,9 @@
   "description": "JSON Unify for Node.js and the Web",
   "main": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "test": "node test/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JSON-UNIFY/javascript.git"
