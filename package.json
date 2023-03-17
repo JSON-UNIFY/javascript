@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "JSON Unify for Node.js and the Web",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "tsc": "tsc"
   },
@@ -20,6 +21,7 @@
     "@hyperjump/json-schema": "^1.4.1"
   },
   "devDependencies": {
+    "@types/node": "^18.15.3",
     "typescript": "^5.0.2"
   }
 }

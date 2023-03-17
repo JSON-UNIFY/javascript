@@ -32,6 +32,6 @@
     "sourceMap": true,
     "allowJs": false,
     "listEmittedFiles": true,
-    "types": []
+    "types": [ "node" ]
   }
 }
