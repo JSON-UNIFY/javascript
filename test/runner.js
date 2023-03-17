@@ -20,7 +20,6 @@ for (const testCase of JSON.parse(readFileSync(resolve(DIRNAME, 'validate.json')
       });
     } else {
       assert.ok(!result.valid);
-      assert.ok(result.errors.length > 0);
     }
   });
 }

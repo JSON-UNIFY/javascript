@@ -7,5 +7,163 @@
       "title": "My dataset",
       "dataset": []
     }
+  },
+  {
+    "title": "dataset items do not match schema",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "foo": {
+          "type": "string"
+        }
+      },
+      "dataset": [
+        { "foo": 1 }
+      ]
+    }
+  },
+  {
+    "title": "dataset transform",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2 ],
+      "datasetTransform": {
+        "$map": { "$eval": "dataset" },
+        "each(x)": { "$eval": "x + 1" }
+      }
+    }
+  },
+  {
+    "title": "dataset uri",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "dataset": "https://json-unify.github.io/my-data.json"
+    }
+  },
+  {
+    "title": "dataset duplicates",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "foo" ],
+      "properties": {
+        "foo": {
+          "type": "number"
+        }
+      },
+      "dataset": [
+        { "foo": 1 },
+        { "foo": 1 }
+      ]
+    }
+  },
+  {
+    "title": "dataset valid item",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "foo" ],
+      "properties": {
+        "foo": {
+          "type": "string"
+        }
+      },
+      "dataset": [
+        { "foo": "bar" }
+      ]
+    }
+  },
+  {
+    "title": "dataset valid items",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "foo" ],
+      "properties": {
+        "foo": {
+          "type": "string"
+        }
+      },
+      "dataset": [
+        { "foo": "bar" },
+        { "foo": "baz" }
+      ]
+    }
+  },
+  {
+    "title": "no root dataset",
+    "valid": true,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "properties": {
+        "foo": {
+          "type": "string",
+          "dataset": {}
+        }
+      },
+      "dataset": []
+    }
+  },
+  {
+    "title": "schema boolean true",
+    "valid": false,
+    "instance": true
+  },
+  {
+    "title": "schema boolean false",
+    "valid": false,
+    "instance": false
+  },
+  {
+    "title": "dataset object",
+    "valid": false,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "dataset": {}
+    }
+  },
+  {
+    "title": "dataset $ref",
+    "valid": false,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "dataset": { "$ref": "https://json-unify.github.io/my-data.json" }
+    }
+  },
+  {
+    "title": "no dataset",
+    "valid": false,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset"
+    }
+  },
+  {
+    "title": "dataset without title",
+    "valid": false,
+    "instance": {
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "dataset": [ 1, 2 ]
+    }
   }
 ]
