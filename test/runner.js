@@ -12,7 +12,9 @@ function importJSON (path) {
 }
 
 for (const testCase of importJSON(resolve(DIRNAME, 'validate.json'))) {
-  test(`validate: ${testCase.title}`, async () => {
+  assert.ok(testCase.instance.$id || typeof testCase.instance === 'boolean');
+  const title = typeof testCase.instance === 'boolean' ? testCase.instance : testCase.instance.$id;
+  test(`validate: ${title}`, async () => {
     const result = await validate(testCase.instance);
     if (testCase.valid) {
       assert.deepEqual(result, {
