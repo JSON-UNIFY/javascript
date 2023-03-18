@@ -163,5 +163,55 @@
       "$schema": "https://json-unify.github.io/schemas/v1.json",
       "dataset": [ 1, 2 ]
     }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/empty-authors",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "authors": []
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/non-string-author",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "authors": [ 1 ]
+    }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/single-author",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "authors": [ "John Doe" ]
+    }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/two-authors",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "authors": [ "John Doe", "Jane Doe" ]
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/non-array-authors",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "authors": "John Doe"
+    }
   }
 ]
