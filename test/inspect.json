@@ -1,0 +1,40 @@
+[
+  {
+    "data": [
+      { "name": "John Doe", "age": 20 },
+      { "name": "Jane Doe", "age": 35 }
+    ],
+    "annotations": [
+      {
+        "name": { "title": "The person name" },
+        "age": { "title": "The person age" }
+      },
+      {
+        "name": { "title": "The person name" },
+        "age": { "title": "The person age" }
+      }
+    ],
+    "instance": {
+      "$id": "https://example.com/person-object-with-title",
+      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "title": "My dataset",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "name", "age" ],
+      "properties": {
+        "name": {
+          "title": "The person name",
+          "type": "string"
+        },
+        "age": {
+          "title": "The person age",
+          "type": "integer"
+        }
+      },
+      "dataset": [
+        { "name": "John Doe", "age": 20 },
+        { "name": "Jane Doe", "age": 35 }
+      ]
+    }
+  }
+]
