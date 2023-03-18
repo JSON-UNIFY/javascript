@@ -16,7 +16,7 @@
     ],
     "instance": {
       "$id": "https://example.com/person-object-with-title",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "type": "object",
       "additionalProperties": false,

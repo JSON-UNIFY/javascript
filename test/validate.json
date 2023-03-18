@@ -3,7 +3,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/empty-dataset",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "dataset": []
     }
@@ -12,7 +12,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/dataset-items-do-not-match-schema",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "type": "object",
       "additionalProperties": false,
@@ -30,7 +30,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/dataset-transform",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "dataset": [ 1, 2 ],
       "datasetTransform": {
@@ -43,7 +43,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/dataset-uri",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "dataset": "https://json-unify.github.io/my-data.json"
     }
@@ -52,7 +52,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/dataset-duplicates",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "type": "object",
       "additionalProperties": false,
@@ -72,7 +72,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/dataset-valid-item",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "type": "object",
       "additionalProperties": false,
@@ -91,7 +91,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/dataset-valid-items",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "type": "object",
       "additionalProperties": false,
@@ -111,7 +111,7 @@
     "valid": true,
     "instance": {
       "$id": "https://example.com/no-root-dataset",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "properties": {
         "foo": {
@@ -134,7 +134,7 @@
     "valid": false,
     "instance": {
       "$id": "https://example.com/dataset-object",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "dataset": {}
     }
@@ -143,7 +143,7 @@
     "valid": false,
     "instance": {
       "$id": "https://example.com/dataset-ref",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset",
       "dataset": { "$ref": "https://json-unify.github.io/my-data.json" }
     }
@@ -152,7 +152,7 @@
     "valid": false,
     "instance": {
       "$id": "https://example.com/no-dataset",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "title": "My dataset"
     }
   },
@@ -160,7 +160,7 @@
     "valid": false,
     "instance": {
       "$id": "https://example.com/dataset-without-title",
-      "$schema": "https://json-unify.github.io/vocab-dataset/v1.json",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
       "dataset": [ 1, 2 ]
     }
   }
