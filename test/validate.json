@@ -213,5 +213,25 @@
       "dataset": [ 1, 2, 3 ],
       "authors": "John Doe"
     }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/documentation-uri",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "documentation": "https://json-unify.github.io"
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/documentation-non-string",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "documentation": 1
+    }
   }
 ]
