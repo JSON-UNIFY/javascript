@@ -9,6 +9,9 @@
     "test": "node test/runner.js",
     "start": "npm run lint && npm run test"
   },
+  "bin": {
+    "unify": "./lib/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JSON-UNIFY/javascript.git"
