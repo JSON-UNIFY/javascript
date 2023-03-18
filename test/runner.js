@@ -19,7 +19,7 @@ for (const testCase of importJSON(resolve(DIRNAME, 'validate.json'))) {
     if (testCase.valid) {
       assert.deepEqual(result, {
         keyword: 'https://json-schema.org/evaluation/validate',
-        absoluteKeywordLocation: 'https://json-unify.github.io/vocab-dataset/v1.json#',
+        absoluteKeywordLocation: 'https://json-unify.github.io/schemas/v1.json#',
         instanceLocation: '#',
         valid: true,
         errors: []
