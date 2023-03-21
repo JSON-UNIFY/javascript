@@ -38,5 +38,58 @@
         { "name": "Jane Doe", "age": 35 }
       ]
     }
+  },
+  {
+    "data": [
+      {
+        "data": { "name": "GET" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "HEAD" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "POST" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "PUT" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "DELETE" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "CONNECT" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "OPTIONS" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "TRACE" },
+        "annotations": { "name": { "title": "Method Name" } }
+      },
+      {
+        "data": { "name": "PATCH" },
+        "annotations": { "name": { "title": "Method Name" } }
+      }
+    ],
+    "instance": {
+      "$id": "https://example.com/remote-http-methods",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "HTTP methods",
+      "dataset": "https://json-unify.github.io/examples/datasets/http-methods.json",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Method Name"
+        }
+      }
+    }
   }
 ]
