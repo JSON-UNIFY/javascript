@@ -55,18 +55,16 @@ for (const testCase of importJSON(resolve(DIRNAME, 'inspect.json'))) {
   assert.ok(testCase.instance.$id);
   test(`inspect: ${testCase.instance.$id}`, async () => {
     return new Promise((resolve, reject) => {
-      const result = { data: [], annotations: [] };
+      const result = [];
       const emitter = inspect(testCase.instance);
       emitter.on('error', reject);
       emitter.on('end', () => {
-        assert.deepEqual(result.data, testCase.data);
-        assert.deepEqual(result.annotations, testCase.annotations);
+        assert.deepEqual(result, testCase.data);
         return resolve();
       });
       emitter.on('data', (data, output, annotations) => {
         if (output.valid) {
-          result.data.push(data);
-          result.annotations.push(annotations);
+          result.push({ data, annotations });
         }
       });
     });
