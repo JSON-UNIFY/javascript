@@ -233,5 +233,52 @@
       "dataset": [ 1, 2, 3 ],
       "documentation": 1
     }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/non-schema-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetFilter": 1
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/invalid-schema-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetFilter": {
+        "type": "foo"
+      }
+    }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/simple-schema-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetFilter": {
+        "type": "integer",
+        "minimum": 2
+      }
+    }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/ref-schema-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetFilter": {
+        "$ref": "https://json-unify.github.io/schemas/v1.json"
+      }
+    }
   }
 ]
