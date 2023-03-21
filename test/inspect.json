@@ -1,17 +1,19 @@
 [
   {
     "data": [
-      { "name": "John Doe", "age": 20 },
-      { "name": "Jane Doe", "age": 35 }
-    ],
-    "annotations": [
       {
-        "name": { "title": "The person name" },
-        "age": { "title": "The person age" }
+        "data": { "name": "John Doe", "age": 20 },
+        "annotations": {
+          "name": { "title": "The person name" },
+          "age": { "title": "The person age" }
+        }
       },
       {
-        "name": { "title": "The person name" },
-        "age": { "title": "The person age" }
+        "data": { "name": "Jane Doe", "age": 35 },
+        "annotations": {
+          "name": { "title": "The person name" },
+          "age": { "title": "The person age" }
+        }
       }
     ],
     "instance": {
