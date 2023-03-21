@@ -7,5 +7,28 @@
       "title": "My dataset",
       "dataset": [ 1, 2, 3 ]
     }
+  },
+  {
+    "data": [
+      { "name": "GET" },
+      { "name": "HEAD" },
+      { "name": "POST" },
+      { "name": "PUT" },
+      { "name": "DELETE" },
+      { "name": "CONNECT" },
+      { "name": "OPTIONS" },
+      { "name": "TRACE" },
+      { "name": "PATCH" }
+    ],
+    "instance": {
+      "$id": "https://example.com/remote-http-methods",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "HTTP methods",
+      "dataset": "https://json-unify.github.io/examples/datasets/http-methods.json",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" }
+      }
+    }
   }
 ]
