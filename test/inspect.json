@@ -91,5 +91,22 @@
         }
       }
     }
+  },
+  {
+    "data": [
+      { "data": 3, "annotations": {} },
+      { "data": 4, "annotations": {} },
+      { "data": 5, "annotations": {} }
+    ],
+    "instance": {
+      "$id": "https://example.com/simple-filter-with-annotations",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3, 4, 5 ],
+      "datasetFilter": {
+        "title": "My annotation",
+        "minimum": 3
+      }
+    }
   }
 ]
