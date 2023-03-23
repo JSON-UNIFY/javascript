@@ -108,5 +108,25 @@
         "minimum": 3
       }
     }
+  },
+  {
+    "data": [
+      { "data": 6, "annotations": {} },
+      { "data": 8, "annotations": {} },
+      { "data": 10, "annotations": {} }
+    ],
+    "instance": {
+      "$id": "https://example.com/simple-filter-with-annotations-plus-transform",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3, 4, 5 ],
+      "datasetFilter": {
+        "title": "My annotation",
+        "minimum": 3
+      },
+      "datasetTransform": {
+        "$eval": "dataset * 2"
+      }
+    }
   }
 ]

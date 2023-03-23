@@ -42,5 +42,32 @@
         "minimum": 3
       }
     }
+  },
+  {
+    "data": [ 2, 4, 6 ],
+    "instance": {
+      "$id": "https://example.com/simple-transform",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetTransform": {
+        "$eval": "dataset * 2"
+      }
+    }
+  },
+  {
+    "data": [ 6, 8, 10 ],
+    "instance": {
+      "$id": "https://example.com/simple-transform-plus-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3, 4, 5 ],
+      "datasetFilter": {
+        "minimum": 3
+      },
+      "datasetTransform": {
+        "$eval": "dataset * 2"
+      }
+    }
   }
 ]
