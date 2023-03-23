@@ -304,5 +304,45 @@
         "$eval": "dataset * 2"
       }
     }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/zero-limit",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetLimit": 0
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/negative-limit",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetLimit": -1
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/real-limit",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetLimit": 2.3
+    }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/positive-integer-limit",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetLimit": 3
+    }
   }
 ]
