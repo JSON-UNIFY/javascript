@@ -69,5 +69,38 @@
         "$eval": "dataset * 2"
       }
     }
+  },
+  {
+    "data": [ 1, 2 ],
+    "instance": {
+      "$id": "https://example.com/simple-limit",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3, 4, 5 ],
+      "datasetLimit": 2
+    }
+  },
+  {
+    "data": [ 1, 2, 3, 4, 5 ],
+    "instance": {
+      "$id": "https://example.com/exceeding-limit",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3, 4, 5 ],
+      "datasetLimit": 100
+    }
+  },
+  {
+    "data": [ 3, 4 ],
+    "instance": {
+      "$id": "https://example.com/limit-with-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3, 4, 5 ],
+      "datasetFilter": {
+        "minimum": 3
+      },
+      "datasetLimit": 2
+    }
   }
 ]
