@@ -280,5 +280,29 @@
         "$ref": "https://json-unify.github.io/schemas/v1.json"
       }
     }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/invalid-transform",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetTransform": {
+        "$eval": 1
+      }
+    }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/simple-transform",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "datasetTransform": {
+        "$eval": "dataset * 2"
+      }
+    }
   }
 ]
