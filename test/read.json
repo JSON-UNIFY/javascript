@@ -102,5 +102,39 @@
       },
       "datasetLimit": 2
     }
+  },
+  {
+    "data": [ 0, 1, 1, 2, 3 ],
+    "instance": {
+      "$id": "https://example.com/fibonacci-generator-limit-5",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": { "$eval": "fibonacci()" },
+      "datasetLimit": 5
+    }
+  },
+  {
+    "data": [ 0, 2, 8, 34, 144 ],
+    "instance": {
+      "$id": "https://example.com/fibonacci-generator-limit-and-filter",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": { "$eval": "fibonacci()" },
+      "datasetFilter": { "multipleOf": 2 },
+      "datasetLimit": 5
+    }
+  },
+  {
+    "data": [ 0, 2, 2, 4, 6 ],
+    "instance": {
+      "$id": "https://example.com/fibonacci-generator-limit-and-transform",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": { "$eval": "fibonacci()" },
+      "datasetLimit": 5,
+      "datasetTransform": {
+        "$eval": "dataset * 2"
+      }
+    }
   }
 ]
