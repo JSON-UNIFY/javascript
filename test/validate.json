@@ -344,5 +344,25 @@
       "dataset": [ 1, 2, 3 ],
       "datasetLimit": 3
     }
+  },
+  {
+    "valid": true,
+    "instance": {
+      "$id": "https://example.com/valid-license",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "license": "MIT"
+    }
+  },
+  {
+    "valid": false,
+    "instance": {
+      "$id": "https://example.com/invalid-license",
+      "$schema": "https://json-unify.github.io/schemas/v1.json",
+      "title": "My dataset",
+      "dataset": [ 1, 2, 3 ],
+      "license": "foo-bar"
+    }
   }
 ]
