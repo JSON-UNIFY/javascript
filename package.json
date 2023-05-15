@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@hyperjump/json-pointer": "^1.0.1",
-    "@hyperjump/json-schema": "^1.4.2",
+    "@hyperjump/json-schema": "^1.5.0",
     "json-e": "^4.5.1",
     "node-fetch": "^3.3.1"
   },
